@@ -1,6 +1,8 @@
 # flutter_dev_book_hands_on_ver1
 
-A new Flutter project.
+書籍「Flutter実践開発」の第６章「実践ハンズオン① 画面編集アプリを開発」の内容に基づくものです。
+
+[Flutter実践開発](https://gihyo.jp/book/2024/978-4-297-13993-3)
 
 ## Getting Started
 
