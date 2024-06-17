@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       // Androidのタスクマネージャーに表示されるアプリ名
-      // iOSでは使用されません
+      // iOSでは使用されない
       title: 'Edit Snap',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
