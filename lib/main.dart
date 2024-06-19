@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Androidのタスクマネージャーに表示されるアプリ名
+      // Androidの「タスクマネージャー」に表示されるアプリ名のこと
       // iOSでは使用されない
       title: 'Edit Snap',
       theme: ThemeData(
