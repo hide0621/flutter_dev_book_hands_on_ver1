@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dev_book_hands_on_ver1/start_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,12 +8,11 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Androidの「タスクマネージャー」に表示されるアプリ名のこと
-      // iOSでは使用されない
+      localizationsDelegates: L10n.localizationsDelegates,
+      supportedLocales: L10n.supportedLocales,
       title: 'Edit Snap',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
