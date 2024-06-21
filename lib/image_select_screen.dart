@@ -4,7 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class ImageSelectScreen extends StatefulWidget {
   const ImageSelectScreen({super.key});
   @override
-  _ImageSelectScreenState createState() => _ImageSelectScreenState();
+  State<ImageSelectScreen> createState() => _ImageSelectScreenState();
 }
 
 class _ImageSelectScreenState extends State<ImageSelectScreen> {
