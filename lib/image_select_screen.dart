@@ -21,12 +21,12 @@ class _ImageSelectScreenState extends State<ImageSelectScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              // 「画像を選ぶ」ボタン
+              /// 「画像を選ぶ」ボタン
               onPressed: () {},
               child: Text(l10n.imageSelect),
             ),
             ElevatedButton(
-              // 「画像を編集する」ボタン
+              /// 「画像を編集する」ボタン
               onPressed: () {},
               child: Text(l10n.imageEdit),
             )
