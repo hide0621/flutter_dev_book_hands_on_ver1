@@ -20,7 +20,7 @@ class StartScreen extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             ElevatedButton(
-              // 「開始する」ボタン
+              /// 「開始する」ボタン
               child: Text(l10n.start), onPressed: () {},
             ),
           ],
