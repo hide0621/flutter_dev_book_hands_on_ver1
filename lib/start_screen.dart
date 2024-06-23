@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'image_select_screen.dart';
+
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
   @override
@@ -21,7 +23,14 @@ class StartScreen extends StatelessWidget {
             ),
             ElevatedButton(
               /// 「開始する」ボタン
-              child: Text(l10n.start), onPressed: () {},
+              child: Text(l10n.start),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const ImageSelectScreen(),
+                  ),
+                );
+              },
             ),
           ],
         ),
