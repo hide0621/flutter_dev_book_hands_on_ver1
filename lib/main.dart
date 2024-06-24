@@ -13,6 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       localizationsDelegates: L10n.localizationsDelegates,
       supportedLocales: L10n.supportedLocales,
+
+      /// Androidのタスクマネージャーに表示されるアプリ名
+      /// iOSの場合はInfo.plistのCFBundleDisplayNameが優先される →　本当に？
       title: 'Edit Snap',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
