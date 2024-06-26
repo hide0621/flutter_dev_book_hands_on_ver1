@@ -58,6 +58,7 @@ class _ImageSelectScreenState extends State<ImageSelectScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = L10n.of(context);
+    final imageBitmap = _imageBitmap;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -67,16 +68,18 @@ class _ImageSelectScreenState extends State<ImageSelectScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            if (imageBitmap != null) Image.memory(imageBitmap),
             ElevatedButton(
               /// 「画像を選ぶ」ボタン
-              onPressed: () {},
+              onPressed: () => _selectImage(),
               child: Text(l10n.imageSelect),
             ),
-            ElevatedButton(
-              /// 「画像を編集する」ボタン
-              onPressed: () {},
-              child: Text(l10n.imageEdit),
-            )
+            if (imageBitmap != null)
+              ElevatedButton(
+                /// 「画像を編集する」ボタン
+                onPressed: () {},
+                child: Text(l10n.imageEdit),
+              )
           ],
         ),
       ),
