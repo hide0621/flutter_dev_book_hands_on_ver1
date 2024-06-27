@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import 'gen/assets.gen.dart';
+
 class ImageEditScreen extends StatefulWidget {
   const ImageEditScreen({super.key, required this.imageBitmap});
 
@@ -32,13 +34,19 @@ class _ImageEditScreenState extends State<ImageEditScreen> {
               onPressed: () {},
 
               /// フレームワーク組み込みのアイコンを設定
-              icon: const Icon(Icons.rotate_left),
+              icon: Assets.rocateIcon.svg(
+                width: 24,
+                height: 24,
+              ),
             ),
             IconButton(
               onPressed: () {},
 
               /// フレームワーク組み込みのアイコンを設定
-              icon: const Icon(Icons.flip),
+              icon: Assets.flipIcon.svg(
+                width: 24,
+                height: 24,
+              ),
             ),
           ],
         ),
